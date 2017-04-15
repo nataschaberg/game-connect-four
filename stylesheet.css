@@ -1,0 +1,197 @@
+body {
+
+}
+
+#mypic {
+  animation: blink 2s;
+  animation-iteration-count: infinite;
+}
+
+
+li {
+  list-style-type: none;
+  font-family: Tahoma;
+  font-size: 30px;
+  color: #5d4037;
+  padding-top: 90px;
+  text-align: center;
+}
+
+#btn-reset {
+  z-index: 7;
+  position: absolute;
+  right: 27%;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  border: 2px solid pink;
+  background-color: #03a9f4;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Tahoma;
+}
+
+#info-turn {
+  border: 3px solid #03a9f4;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -2;
+  right: 30%;
+  top: 12%;
+  width: 250px;
+  height: 250px;
+  background-color: white;
+}
+
+#comic-cloud {
+  position: absolute;
+  z-index: -7;
+  right: 20%;
+  top: 18%;
+  width: 150px;
+  height: 150px;
+  transform: rotate(25deg);
+  opacity: 0.8;
+}
+
+#pic-arrow {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+}
+
+#board {
+  height: 625px;
+  width: 725px;
+  margin: 50px;
+}
+
+#dialog-box {
+  background-color: grey;
+  opacity: 0.9;
+  width: 100%;
+  height: 610px;
+  z-index: 100;
+  position: absolute;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#btn-computer {
+  z-index: 101;
+  width: 200px;
+  height:150px;
+  opacity: 1;
+  background-color: #2196f3;
+  color: white;
+  font-size: 25px;
+  border-radius: 20%;
+  border: 8px solid white;
+  top:35%;
+  left: 52%;
+  position: absolute;
+}
+
+#btn-two-players {
+  z-index: 101;
+  width: 200px;
+  border: 8px solid white;
+  background-color: #2196f3;
+  color: white;
+  font-size: 25px;
+  height:150px;
+  opacity: 1;
+  border-radius: 20%;
+  top:35%;
+  left: 30%;
+  position: absolute;
+}
+
+
+.player1 {
+  width:100px;
+  height:100px;
+  background-color: #5e35b1;
+}
+
+.player2 {
+  width:100px;
+  height:100px;
+  background-color: #00e676;
+}
+
+
+.empty {
+
+}
+
+#board > div{
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+
+}
+
+.row {
+    position:relative;
+    width:100px;
+    height:100px;
+    margin:0 auto;
+    overflow:hidden;
+    margin: 0px;
+    padding: 0px;
+}
+.row:after{
+    content:'';
+    position:absolute;
+    left:12%;
+    top:12%;
+    border-radius:100%;
+    width:75px;
+    height:75px;
+    box-shadow: 0px 0px 0px 300px pink;
+}
+
+#banner {
+  position: absolute;
+  z-index: -5;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: #bbdefb;
+  border: 4px solid pink;
+  top: 35%;
+  left: 55%;
+  text-align: center;
+}
+
+p {
+  font-size: 40px;
+  font-family: Tahoma;
+  font-weigth: bold;
+  z-index: 10;
+  padding-top: 120px;
+  color: #5d4037;
+}
+
+#big-cloud {
+  height: 600px;
+  width: 600px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
